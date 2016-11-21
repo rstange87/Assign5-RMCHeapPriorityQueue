@@ -14,11 +14,13 @@ public class DriverClass {
             myQueue.add((int)(Math.random() * 1000));
         }
 
+        //Print unsorted if <= 20 elements.
         if (initialSize <= 20) {
             System.out.println(myQueue.toString());
         }
+
         //Uses poll to add to a new array in descending sorted order.
-        //Prints new sorted array before program ends;
+        //Prints new sorted array before program ends, if size is <= 20.
         myQueue.sortAsc();
 
     }
